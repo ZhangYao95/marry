@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.1.1.min.js"></script>
+
+    <script>
+        $(function () {
+                $(".li1>a").click(function () {
+                    $(this).addClass("curren").next().show(500)
+                        .parent().siblings().children("a").removeClass("curren").next().hide(500);
+                })
+        })
+
+    </script>
+    <style>
+    *{
+        margin:0;padding:0
+    }
+    ul{
+        list-style: none;
+    }
+    .side{
+        width:232px;
+        height:auto;
+
+    }
+    .li1,.li2{
+        line-height:40px;
+        text-align: center;
+        border-top: 1px solid #000000;
+    }
+    .li1{
+        background-color:#fae3e7;
+
+    }
+    .li2{
+        background-color: #e4b9b9;
+        color:#fff;
+
+    }
+    .li1 a{
+        display: block;
+        width:232px;
+        height:40px;
+        font-size:20px;
+        cursor: pointer;
+    }
+    .curren{
+        background-color:red;
+    }
+    .level2{
+        display: none;
+    }
+</style>
+
+
+</head>
+<body>
+<div class="side">
+    <ul class="level1">
+        <li class="li1"><a>基本资料</a>
+            <ul class="level2">
+                <li class="li2">1</li>
+                <li class="li2">2</li>
+                <li class="li2">3</li>
+                <li class="li2">4</li>
+                <li class="li2">5</li>
+            </ul>
+        </li>
+        <li class="li1"><a>择偶条件</a>
+            <ul class="level2">
+                <li class="li2">1</li>
+                <li class="li2">2</li>
+                <li class="li2">3</li>
+                <li class="li2">4</li>
+                <li class="li2">5</li>
+            </ul>
+        </li>
+        <li class="li1"><a>我的照片</a>
+            <ul class="level2">
+                <li class="li2">1</li>
+                <li class="li2">2</li>
+                <li class="li2">3</li>
+                <li class="li2">4</li>
+                <li class="li2">5</li>
+            </ul>
+        </li>
+        <li class="li1"><a>详细资料</a>
+            <ul class="level2">
+                <li class="li2">1</li>
+                <li class="li2">2</li>
+                <li class="li2">3</li>
+                <li class="li2">4</li>
+                <li class="li2">5</li>
+            </ul>
+        </li>
+        <li class="li1"><a>关于举报</a>
+            <ul class="level2">
+                <li class="li2">1</li>
+                <li class="li2">2</li>
+                <li class="li2">3</li>
+                <li class="li2">4</li>
+                <li class="li2">5</li>
+            </ul>
+        </li>
+        <li class="li1"><a>安全认证</a>
+            <ul class="level2">
+                <li class="li2">1</li>
+                <li class="li2">2</li>
+                <li class="li2">3</li>
+                <li class="li2">4</li>
+                <li class="li2">5</li>
+            </ul>
+        </li>
+        <li class="li1"><a>系统设置</a>
+            <ul class="level2">
+                <li class="li2">1</li>
+                <li class="li2">2</li>
+                <li class="li2">3</li>
+                <li class="li2">4</li>
+                <li class="li2">5</li>
+            </ul>
+        </li>
+
+    </ul>
+
+</div>
+
+</body>
+</html>

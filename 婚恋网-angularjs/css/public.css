@@ -1,0 +1,44 @@
+﻿*{
+    margin:0px;
+    padding:0px;
+    font-size:14px;
+   
+}
+a{
+    text-decoration:none;
+    cursor:pointer;
+    color:black;
+}
+a:hover{
+    cursor:pointer;    
+}
+ul,ol{
+    list-style:none;
+
+}
+li{
+     list-style:none;
+}
+img{
+    vertical-align:middle;
+}
+input::-moz-placeholder{
+    color:#b3b4b7;
+    font-size:14px;
+}
+input::-webkit-input-placeholder{
+    color:#b3b4b7;
+    font-size:14px;
+}
+input:-ms-input-placeholder{
+    color:#b3b4b7;
+    font-size:14px;
+}
+input[type=number] {
+    -moz-appearance:textfield;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

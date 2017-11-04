@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片轮播</title>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/angular.min.js"></script>
+    <style>
+        *{margin:0;padding:0}
+        ul,li{list-style:none}
+        .bannerBox li a img{
+            width:780px;
+            height:340px;
+            display: block;
+        }
+        .scrollBanner{
+            width:780px;
+            height:340px;
+            position: relative;
+            overflow: hidden;
+            margin:100px auto;
+        }
+        .bannerBox{
+            position:absolute;
+            width:5530px;
+            height:340px;
+        }
+        .bannerBox li{
+            float: left;
+        }
+        .arr_left{
+            display: inline-block;
+            position: absolute;
+            top:155px;
+            left:5px;
+            width:30px;
+            height:30px;
+            line-height: 30px;
+            text-align: center;
+            background-color:#ddd;
+            cursor: pointer;
+            z-index: 5;
+            opacity: 0.5;
+        }
+        .arr_left:hover,.arr_right:hover{
+            background-color:#777777;
+        }
+        .arr_right{
+            display: inline-block;
+            position: absolute;
+            top:155px;
+            right:5px;
+            width:30px;
+            height:30px;
+            line-height: 30px;
+            text-align: center;
+            background-color:#ddd;
+            cursor: pointer;
+            z-index: 5;
+            opacity: 0.5;
+        }
+        .scroll_num{
+            position: absolute;
+            top:300px;
+            left:50%;
+            margin-left:-27px;
+        }
+        .scroll_num span{
+            display: block;
+            width: 10px;
+            height:10px;
+            border-radius: 5px;
+            background-color:#ddd;
+            margin-left:4px;
+            cursor: pointer;
+            float: left;
+        }
+        .scroll_num span:hover{
+            background-color: #777;
+        }
+       .scroll_num .current{
+            background-color:red;
+        }
+    </style>
+</head>
+<body>
+    <div  class="scrollBanner">
+        <ul class="bannerBox">
+            <li><a href="javascript:void(0)" ><img src="../images/lunbo1.jpg"></a></li>
+            <li><a href="javascript:void(0)" ><img src="../images/lunbo2.jpg"></a></li>
+            <li><a href="javascript:void(0)" ><img src="../images/lunbo3.jpg"></a></li>
+            <li><a href="javascript:void(0)" ><img src="../images/lunbo4.jpg"></a></li>
+            <li><a href="javascript:void(0)" ><img src="../images/lunbo5.jpg"></a></li>
+            <li><a href="javascript:void(0)" ><img src="../images/lunbo6.jpg"></a></li>
+            <li><a href="javascript:void(0)" ><img src="../images/lunbo7.jpg"></a></li>
+
+
+        </ul>
+        <a class="arr_left" title="上一张"><</a>
+        <a class="arr_right" title="下一张">> </a>
+
+        <div class="scroll_num">
+            <span class="current"></span>
+            <span class=""></span>
+            <span class=""></span>
+            <span class=""></span>
+            <span class=""></span>
+            <span class=""></span>
+            <span class=""></span>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            var duration=2000;
+            var playTime=1000;
+            banner(duration,playTime);
+            $(".arr_left,.arr_right").hide();
+            $(".scrollBanner").hover(function () {
+                $(".arr_left,.arr_right").show();
+            },function () {
+                $(".arr_left,.arr_right").hide();
+            })
+        });
+        function banner(duration,playTime) {
+            var $newli=$(".scrollBanner .bannerBox li").eq(0).clone();
+            $(".bannerBox").append($newli);
+            var $oUL=$(".bannerBox");
+            var $oLIs=$oUL.children();
+            var $oNavlist=$(".scroll_num").children();
+            var $arrLeft=$(".arr_left");
+            var $arrRight=$(".arr_right");
+            var index=0;
+            var imgLength=$oLIs.length-1;
+            //点击左右两边的箭头
+            $arrRight.click(function () {
+                index++;
+                if(index>imgLength){
+                    index=1;
+                    $oUL.css({
+                        "left":0+"px"
+                    })
+                }
+                move(index);
+            });
+            $arrLeft.click(function () {
+                index--;
+                if(index<0){
+                    index=imgLength-1;
+                    $oUL.css({
+                        "left":-(imgLength)*$oLIs.eq(0).width()+"px"
+                    })
+                }
+                move(index);
+            });
+
+            var timer=setInterval(function () {
+                $arrRight.click();
+            },duration);
+
+            clearTimer($oUL);
+            clearTimer($arrRight);
+            clearTimer($arrLeft);
+            clearTimer($oNavlist);
+
+            function clearTimer($ele) {
+                $ele.hover(function () {
+                    clearInterval(timer);
+                },function () {
+                    timer=setInterval(function () {
+                        $arrRight.click();
+                    },duration);
+                })
+            };
+
+            $oNavlist.each(function () {
+                var _index=$(this).index();
+                $(this).click(function () {
+                    if(_index>imgLength){
+                        _index=1;
+                    }
+                    move(_index);
+                })
+            });
+
+            function move(index) {
+                $oUL.stop().animate({
+                    left:index*(-$oLIs.eq(0).width())+"px"
+                },playTime);
+                $oNavlist.removeClass("current");
+                $oNavlist.eq(index>=imgLength?0:index).addClass("current");
+            }
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>

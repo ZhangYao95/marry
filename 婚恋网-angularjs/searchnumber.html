@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="css/public.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/aboutmarry.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/An-public.js"></script>
+
+
+</head>
+<body ng-app="app">
+<zyheader></zyheader>
+<zynav></zynav>
+<div class="image">
+    <img src="images/banner.jpg" />
+</div>
+<div class="main">
+    <div class="main_box">
+        <div class="main_box_left">
+            <div class="sch_top">
+               <div class="sch_search">
+                   <input type="search" >
+                   <button class="sch_butt"><img src="images/search.png"></button>
+               </div>
+               <div class="sch_top_content">
+                    我要找：
+                   <select class="sch_select">
+                       <option>1990</option>
+                       <option>1991</option>
+                       <option>1990</option>
+                       <option>1991</option>
+                       <option>1990</option>
+                       <option>1991</option>
+                       <option>1990</option>
+                       <option>1991</option>
+                   </select>
+               </div>
+                <div class="sch_top_content">
+                    出生年月：
+                    <select class="sch_select">
+                        <option>男朋友</option>
+                        <option>女朋友</option>
+                    </select>
+                </div>
+                <button class="sch_button">搜索</button>
+            </div>
+            <div class="sch_ul">
+                <ul>
+                    <li class="sch_ul_1">户籍</li>
+                    <li class="sch_ul_2"><a href="#">不限</a></li>
+                    <li class="sch_ul_3"><a href="#">本地</a></li>
+                    <li class="sch_ul_3"><a href="#">xxx</a></li>
+                    <li class="sch_ul_3"><a href="#">xxx</a></li>
+                    <li class="sch_ul_3"><a href="#">xxx</a></li>
+                    <li class="sch_ul_3"><a href="#">xxxx</a></li>
+                    <li class="sch_ul_3"><a href="#">xxx</a></li>
+                </ul>
+                <ul>
+                    <li class="sch_ul_1">出生年月</li>
+                    <li class="sch_ul_2"><a href="#">不限</a></li>
+                    <li class="sch_ul_3"><a href="#">本地</a></li>
+                    <li class="sch_ul_3"><a href="#">xxx</a></li>
+                    <li class="sch_ul_3"><a href="#">xxx</a></li>
+                    <li class="sch_ul_3"><a href="#">xxx</a></li>
+                    <li class="sch_ul_3"><a href="#">xxxx</a></li>
+                    <li class="sch_ul_3"><a href="#">xxx</a></li>
+                </ul>
+                <ul>
+                    <li class="sch_ul_1">学历</li>
+                    <li class="sch_ul_2"><a href="#">不限</a></li>
+                    <li class="sch_ul_3"><a href="#">本地</a></li>
+                    <li class="sch_ul_3"><a href="#">xxx</a></li>
+                    <li class="sch_ul_3"><a href="#">xxx</a></li>
+                    <li class="sch_ul_3"><a href="#">xxx</a></li>
+                    <li class="sch_ul_3"><a href="#">xxxx</a></li>
+                    <li class="sch_ul_3"><a href="#">xxx</a></li>
+                </ul>
+                <ul>
+                    <li class="sch_ul_1">婚姻状况</li>
+                    <li class="sch_ul_2"><a href="#">不限</a></li>
+                    <li class="sch_ul_3"><a href="#">本地</a></li>
+                    <li class="sch_ul_3"><a href="#">xxx</a></li>
+                    <li class="sch_ul_3"><a href="#">xxx</a></li>
+                    <li class="sch_ul_3"><a href="#">xxx</a></li>
+                    <li class="sch_ul_3"><a href="#">xxxx</a></li>
+                    <li class="sch_ul_3"><a href="#">xxx</a></li>
+                </ul>
+                <ul>
+                    <li class="sch_ul_1">从事地方</li>
+                    <li class="sch_ul_2"><a href="#">不限</a></li>
+                    <li class="sch_ul_3"><a href="#">本地</a></li>
+                    <li class="sch_ul_3"><a href="#">xxx</a></li>
+                    <li class="sch_ul_3"><a href="#">xxx</a></li>
+                    <li class="sch_ul_3"><a href="#">xxx</a></li>
+                    <li class="sch_ul_3"><a href="#">xxxx</a></li>
+                    <li class="sch_ul_3"><a href="#">xxx</a></li>
+                </ul>
+                <ul>
+                    <li class="sch_ul_1">从事工作</li>
+                    <li class="sch_ul_2"><a href="#">不限</a></li>
+                    <li class="sch_ul_3"><a href="#">本地</a></li>
+                    <li class="sch_ul_3"><a href="#">xxx</a></li>
+                    <li class="sch_ul_3"><a href="#">xxx</a></li>
+                    <li class="sch_ul_3"><a href="#">xxx</a></li>
+                    <li class="sch_ul_3"><a href="#">xxxx</a></li>
+                    <li class="sch_ul_3"><a href="#">xxx</a></li>
+                </ul>
+                <ul>
+                    <li class="sch_ul_1">月收入</li>
+                    <li class="sch_ul_2"><a href="#">不限</a></li>
+                    <li class="sch_ul_3"><a href="#">本地</a></li>
+                    <li class="sch_ul_3"><a href="#">xxx</a></li>
+                    <li class="sch_ul_3"><a href="#">xxx</a></li>
+                    <li class="sch_ul_3"><a href="#">xxx</a></li>
+                    <li class="sch_ul_3"><a href="#">xxxx</a></li>
+                    <li class="sch_ul_3"><a href="#">xxx</a></li>
+                </ul>
+                <ul>
+                    <li class="sch_ul_1">住房</li>
+                    <li class="sch_ul_2"><a href="#">不限</a></li>
+                    <li class="sch_ul_3"><a href="#">本地</a></li>
+                    <li class="sch_ul_3"><a href="#">xxx</a></li>
+                    <li class="sch_ul_3"><a href="#">xxx</a></li>
+                    <li class="sch_ul_3"><a href="#">xxx</a></li>
+                    <li class="sch_ul_3"><a href="#">xxxx</a></li>
+                    <li class="sch_ul_3"><a href="#">xxx</a></li>
+                </ul>
+            </div>
+            <div class="sch_paixu">
+                <ul>
+                    <li>综合排序<img src="images/arrow.png"></li>
+                    <li>最新会员<img src="images/arrow.png"></li>
+                    <li>魅力排序<img src="images/arrow.png"></li>
+                </ul>
+            </div>
+            <img src="images/arrow.png">
+            <ul class="meinv">
+                <li>
+                    <a href="#">
+                        <img src="images/test.png"/>
+                        <p class="meinv_vip">会员号：0001</p>
+                        <p class="meinv_text">
+                            25岁|本科|165cm<br />
+                            销售|有房
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/test1.png" />
+                        <p class="meinv_vip">会员号：0001</p>
+                        <p class="meinv_text">
+                            25岁|本科|165cm<br />
+                            销售|有房
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/test.png" />
+                        <p class="meinv_vip">会员号：0001</p>
+                        <p class="meinv_text">
+                            25岁|本科|165cm<br />
+                            销售|有房
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/test1.png" />
+                        <p class="meinv_vip">会员号：0001</p>
+                        <p class="meinv_text">
+                            25岁|本科|165cm<br />
+                            销售|有房
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/test.png" />
+                        <p class="meinv_vip">会员号：0001</p>
+                        <p class="meinv_text">
+                            25岁|本科|165cm<br />
+                            销售|有房
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/test1.png" />
+                        <p class="meinv_vip">会员号：0001</p>
+                        <p class="meinv_text">
+                            25岁|本科|165cm<br />
+                            销售|有房
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/test.png" />
+                        <p class="meinv_vip">会员号：0001</p>
+                        <p class="meinv_text">
+                            25岁|本科|165cm<br />
+                            销售|有房
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/test1.png" />
+                        <p class="meinv_vip">会员号：0001</p>
+                        <p class="meinv_text">
+                            25岁|本科|165cm<br />
+                            销售|有房
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/test.png" />
+                        <p class="meinv_vip">会员号：0001</p>
+                        <p class="meinv_text">
+                            25岁|本科|165cm<br />
+                            销售|有房
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/test1.png" />
+                        <p class="meinv_vip">会员号：0001</p>
+                        <p class="meinv_text">
+                            25岁|本科|165cm<br />
+                            销售|有房
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/test.png" />
+                        <p class="meinv_vip">会员号：0001</p>
+                        <p class="meinv_text">
+                            25岁|本科|165cm<br />
+                            销售|有房
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/test1.png" />
+                        <p class="meinv_vip">会员号：0001</p>
+                        <p class="meinv_text">
+                            25岁|本科|165cm<br />
+                            销售|有房
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/test.png" />
+                        <p class="meinv_vip">会员号：0001</p>
+                        <p class="meinv_text">
+                            25岁|本科|165cm<br />
+                            销售|有房
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/test1.png" />
+                        <p class="meinv_vip">会员号：0001</p>
+                        <p class="meinv_text">
+                            25岁|本科|165cm<br />
+                            销售|有房
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/test.png" />
+                        <p class="meinv_vip">会员号：0001</p>
+                        <p class="meinv_text">
+                            25岁|本科|165cm<br />
+                            销售|有房
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/test1.png" />
+                        <p class="meinv_vip">会员号：0001</p>
+                        <p class="meinv_text">
+                            25岁|本科|165cm<br />
+                            销售|有房
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/test.png" />
+                        <p class="meinv_vip">会员号：0001</p>
+                        <p class="meinv_text">
+                            25岁|本科|165cm<br />
+                            销售|有房
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/test1.png" />
+                        <p class="meinv_vip">会员号：0001</p>
+                        <p class="meinv_text">
+                            25岁|本科|165cm<br />
+                            销售|有房
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/test.png" />
+                        <p class="meinv_vip">会员号：0001</p>
+                        <p class="meinv_text">
+                            25岁|本科|165cm<br />
+                            销售|有房
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/test1.png" />
+                        <p class="meinv_vip">会员号：0001</p>
+                        <p class="meinv_text">
+                            25岁|本科|165cm<br />
+                            销售|有房
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/test.png" />
+                        <p class="meinv_vip">会员号：0001</p>
+                        <p class="meinv_text">
+                            25岁|本科|165cm<br />
+                            销售|有房
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/test1.png" />
+                        <p class="meinv_vip">会员号：0001</p>
+                        <p class="meinv_text">
+                            25岁|本科|165cm<br />
+                            销售|有房
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/test.png" />
+                        <p class="meinv_vip">会员号：0001</p>
+                        <p class="meinv_text">
+                            25岁|本科|165cm<br />
+                            销售|有房
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/test1.png" />
+                        <p class="meinv_vip">会员号：0001</p>
+                        <p class="meinv_text">
+                            25岁|本科|165cm<br />
+                            销售|有房
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/test.png" />
+                        <p class="meinv_vip">会员号：0001</p>
+                        <p class="meinv_text">
+                            25岁|本科|165cm<br />
+                            销售|有房
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/test1.png" />
+                        <p class="meinv_vip">会员号：0001</p>
+                        <p class="meinv_text">
+                            25岁|本科|165cm<br />
+                            销售|有房
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/test.png" />
+                        <p class="meinv_vip">会员号：0001</p>
+                        <p class="meinv_text">
+                            25岁|本科|165cm<br />
+                            销售|有房
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/test1.png" />
+                        <p class="meinv_vip">会员号：0001</p>
+                        <p class="meinv_text">
+                            25岁|本科|165cm<br />
+                            销售|有房
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/test.png" />
+                        <p class="meinv_vip">会员号：0001</p>
+                        <p class="meinv_text">
+                            25岁|本科|165cm<br />
+                            销售|有房
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/test1.png" />
+                        <p class="meinv_vip">会员号：0001</p>
+                        <p class="meinv_text">
+                            25岁|本科|165cm<br />
+                            销售|有房
+                        </p>
+                    </a>
+                </li>
+
+
+            </ul>
+            <div class="st_page">
+                <a class="page" href="story.html">1</a>
+                <a class="page" href="story.html">2</a>
+                <a class="page" href="story.html">3</a>
+                <a class="page" href="story.html">4</a>
+                <a class="page" href="story.html">5</a>
+                <a class="page">...</a>
+                <a class="page" href="story.html">25</a>
+                <a class="st_next" href="story.html">下一页</a>
+
+
+            </div>
+        </div>
+
+        <div class="main_box_right">
+            <div class="right_top">
+                <p>会员登录</p>
+                <div class="denglu_name">
+                    <span class="xiaoren"></span>
+                    <input type="text" name="username" placeholder="账户名" id="username" />
+                </div>
+                <div class="denglu_pass">
+                    <span class="suo"></span>
+                    <input type="password" name="password" placeholder="密码" id="password" />
+                </div>
+                <button name="button" type="submit" id="denglu">立即登录</button>
+                <div class="righttop_text">
+                    没有账号？
+                    <a class="text_zhuce" href="zhuce.html">
+                        免费注册
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="text_pass" href="denglu.html">
+                        忘记密码>
+                    </a>
+                </div>
+            </div>
+            <div class="right_second">
+                <img src="images/adv2.png">
+            </div>
+            <div class="right_third">
+                <img src="images/adv1.png">
+            </div>
+
+            <div class="message">
+                通告栏
+                <hr style="border:1px dashed #bfbfbf;width:210px;margin:10px auto;">
+                <div class="message_content">
+                    <p> 一、请各用电客户尽快与开户银行联系，按照中国人民银行XX分行的统一要求签订
+                        《定期借记业务授权委托书》，并于2002年1月31日前将复印件送达所在区供电局。
+                    </p>
+                    <p> 二、 部分商业银行由于系统升级原因更改了开户银行账号格式，请客户在签订
+                        《定期借记业务授权委托书》的同时与贵开户银行确认新的银行账号，
+                        并于2002年1月31日前以正式公函形式通知我局，若届时未受到客户的《定期借记业务授权委托书》
+                        及新的银行帐号的，客户将无法使用定期借记方式缴交电费，我局将采取现金方式收取电费。
+                    </p>
+                    <p> 三、由于定期借记业务系统投运后，银行系统将不再代为传递电费票据，故我局将统一采取邮政递送，
+                        客户签收的方式派发系统将不再代为传递电费票据，故我局将统一采取邮政递送，客户签收的方式派发
+                    </p>
+                </div>
+            </div>
+            <div class="lianxi">
+
+                联系我们
+                <hr style="border:1px dashed #bfbfbf;width:210px;margin:10px auto;">
+                <p>公司名称：</p>
+                <p>联系人</p>
+                <p>联系电话</p>
+                <p>电子邮箱</p>
+                <p>实体店地址：浙江省杭州市西湖区工业园381号</p>
+                <p>xxxxxxxxxx官方微信</p>
+                <img src="images/weixin.jpg">
+                <p>"扫一扫与万家喜亲密互动"</p>
+            </div>
+        </div>
+    </div>
+<div style="margin-top:80px;">
+    <zynav></zynav>
+</div>
+
+    <!--QQ侧边栏-->
+    <zyqq></zyqq>
+    <!--QQ侧边栏-->
+
+
+  <zyfooter></zyfooter>
+</div>
+</body>
+</html>

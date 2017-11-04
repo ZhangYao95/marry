@@ -1,0 +1,49 @@
+.public_left{
+    width:230px;
+    height:auto;
+    overflow: hidden;
+}
+.public_left_top{
+    width:230px;
+    height:45px;
+    line-height: 45px;
+    background-color:#eb6877;
+    text-indent: 15px;
+    color:#fff;
+    font-size:20px;
+
+}
+ .public_left_content{
+     width:210px;
+     height:auto;
+     overflow: hidden;
+     background-color:#fae3e7;
+     padding:5px 10px 40px 10px ;
+     text-indent: 10px;
+ }
+.public_left_li{
+    /*display: block;*/
+    /*width:210px;*/
+    /*height:45px;*/
+    line-height: 45px;
+    background: url(../images/icon2.png) right no-repeat;
+    border-bottom: 1px solid #eb6877;
+    /*float: left;*/
+
+}
+.public_left_qianul{
+    width:210px;
+    height:auto;
+    overflow: hidden;
+    background-color:#fae3e7;
+    text-indent: 10px;
+}
+.public_left_qiantao{
+    /*display: block;*/
+    /*width:200px;*/
+    /*height:45px;*/
+    line-height: 45px;
+    border-top: 1px solid #eb6877;
+    /*float: left;*/
+    color:#fff;
+}

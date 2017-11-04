@@ -1,0 +1,75 @@
+.bannerBox li a img{
+    width:780px;
+    height:340px;
+    display: block;
+}
+.scrollBanner{
+    width:780px;
+    height:340px;
+    position: relative;
+
+    overflow: hidden;
+
+
+}
+.bannerBox{
+    position:absolute;
+    width:5530px;
+    height:340px;
+}
+.bannerBox li{
+    float: left;
+}
+.arr_left{
+    display: inline-block;
+    position: absolute;
+    top:155px;
+    left:5px;
+    width:30px;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+    background-color:#ddd;
+    cursor: pointer;
+    z-index: 5;
+    opacity: 0.5;
+}
+.arr_left:hover,.arr_right:hover{
+    background-color:#777777;
+}
+.arr_right{
+    display: inline-block;
+    position: absolute;
+    top:155px;
+    right:5px;
+    width:30px;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+    background-color:#ddd;
+    cursor: pointer;
+    z-index: 5;
+    opacity: 0.5;
+}
+.scroll_num{
+    position: absolute;
+    top:300px;
+    left:50%;
+    margin-left:-27px;
+}
+.scroll_num span{
+    display: block;
+    width: 10px;
+    height:10px;
+    border-radius: 5px;
+    background-color:#ddd;
+    margin-left:4px;
+    cursor: pointer;
+    float: left;
+}
+.scroll_num span:hover{
+    background-color: #777;
+}
+.scroll_num .current{
+    background-color:red;
+}

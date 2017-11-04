@@ -1,0 +1,71 @@
+.head{
+    width:100%;
+    height:160px;
+    background-color:#e9e9e9;
+
+}
+.head_top{
+    width:100%;
+    height:35px;
+    background-color:#e9e9e9;
+}
+.head_top_center{
+    width:1200px;
+    margin-left:auto;
+    margin-right:auto;
+    line-height:35px;
+}
+.head_left{
+    float:left;
+    width:260px;
+    height:35px;
+    text-align:center;
+    line-height:35px;
+
+}
+.head_right{
+    float:right;
+    width:68px;
+    height:35px;
+    text-align:center;
+    line-height:35px;
+
+}
+
+.top_ban{
+    width:100%;
+    height:118px;
+    background-image:url("../images/topbg.png");
+    padding-bottom:5px;
+}
+.top_ban_center{
+    width:1200px;
+    height:125px;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+.top_ban1{
+    width:365px;
+    height:120px;
+    line-height:120px;
+    float:left;
+}
+.top_ban2{
+    width:411px;
+    height:120px;
+    line-height:120px;
+    float:left;
+}
+.top_ban3{
+    width:224px;
+    height:120px;
+    line-height:120px;
+    float:left;
+}
+.top_ban4{
+    width:113px;
+    height:120px;
+    line-height:120px;
+    float:right;
+}

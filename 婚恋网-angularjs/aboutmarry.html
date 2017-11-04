@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>aboutmarry</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/aboutmarry.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/An-public.js"></script>
+
+</head>
+<body ng-app="app">
+<zyheader></zyheader>
+<zynav></zynav>
+<div class="main">
+    <div class="main_box">
+        <div class="main_box_right" >
+            <div class="huodong">
+                个人中心
+            </div>
+            <zyside></zyside>
+
+        </div>
+        <div class="main_box_left">
+            <div class="ac_righttop">
+                当前位置>
+                <a href="index.html">首页></a>
+                <a href="active.html">活动专题></a>
+                线下活动
+            </div>
+            <div class="am_content">
+                <div class="am_marry">
+                    关于婚姻>>
+                </div>
+                    <ul class="am_list">
+                        <li class="am_list_li">
+                            <span>是否要小孩：</span>
+                            <select class="am_select">
+                                <option>是</option>
+                                <option>否</option>
+                            </select>
+                        </li>
+                        <li class="am_list_li">
+                            <span> 何时结婚：</span>
+                            <input type="text" class="am_select">
+                        </li>
+                        <li class="am_list_li">
+                            <span> 愿与对方父母同住：</span>
+                            <select class="am_select">
+                                <option>是</option>
+                                <option>否</option>
+                            </select>
+                        </li>
+                        <li class="am_list_li">
+                            <span> 家中排行：</span>
+                            <select class="am_select">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </li>
+                        <li class="am_list_li">
+                            <span> 父母情况：</span>
+                            <input type="text" class="am_input">
+                        </li>
+                        <li class="am_list_li">
+                            <span> 兄弟姐妹：</span>
+                            <input type="text" class="am_input">
+                        </li>
+                        <li class="am_list_li">
+                            <span> 父母经济情况：</span>
+                            <input type="text" class="am_input">
+                        </li>
+
+                        <li class="am_list_li">
+                            <span> 父母医保情况：</span>
+                            <select class="am_select">
+                                <option>有医保</option>
+                                <option>无医保</option>
+
+                            </select>
+                        </li>
+                        <li class="am_list_li">
+                            <span> 理想婚姻：</span>
+                           <textarea class="marry_text">
+
+                           </textarea>
+                            <span style="text-align: left"> 剩余50字</span>
+                        </li>
+                    </ul>
+                <div class="am_button">
+                    <button id="am_butt" >保存并继续</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--QQ侧边栏-->
+    <zyqq></zyqq>
+    <div style="margin-top:80px;">
+        <zynav></zynav>
+    </div>
+
+
+  <zyfooter></zyfooter>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+.lq-box{
+    width:1192px;
+    height:270px;
+    margin-top:40px;
+}
+.lq-left{
+    width:790px;
+    height:270px;
+    float: left;
+
+    position: relative;
+}
+.lq-right{
+    width:390px;
+    height:270px;
+    float: right;
+
+    position: relative;
+}
+.lq-left-content{
+    width:790px;
+    height:210px;
+}
+.lq-left-li{
+    display: block;
+    width:178px;
+    height:195px;
+    float: left;
+    margin:15px 10px;
+    border-right:1px solid #ddd;
+    position: relative;
+}
+.lq-left-li:nth-last-child(1){
+    border-right: none;
+    margin-right: 0;
+}
+.lq-left-li>div{
+    width:100px;
+    height:180px;
+    border-top:4px solid red;
+    background-color:#fff;
+}
+.lq-p1:nth-child(1){
+    font-size:10px;
+    color:red;
+}
+.lq-p1 .lq-num{
+    font-size:20px;
+    font-weight: 900;
+    color:red;
+}
+.lq-p2{
+    font-size:12px;
+    color:red;
+    margin:10px 8px ;
+}
+.lq-p3{
+    width:70px;
+    height:35px;
+    background-color:rgb(231,231,231);
+    font-size:12px;
+    line-height: 20px;
+    padding:15px;
+
+}
+.lq-p4{
+    width:100px;
+    height:25px;
+    font-size:12px;
+    text-align: center;
+    line-height: 25px;
+    background-color:red;
+    color:#fff;
+}
+.lq-img{
+    position: absolute;
+    left:20px;
+    top:20px;
+    z-index: -2;
+    width:140px;
+    height: 140px;
+}
+.lq-left-li:hover .lq-img{
+    left:30px;
+    transition: 0.5s;
+}
+.lq-right-content{
+    width:390px;
+    height:270px;
+    overflow: hidden;
+    position: relative;
+}
+.lq-right-ul li img{
+    width:200px;
+    height:140px;
+    float: left;
+    margin-left:20px;
+}
+.lq-right-ul{
+    display: block;
+    width:2340px;
+    height:270px;
+    margin-top:20px;
+    position: absolute;
+}
+.lq-right-ul li{
+    float: left;
+}
+.lq-attrleft,.lq-attrright{
+    display: block;
+    width:20px;
+    height: 40px;
+    background-color:#d5d5d5;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.lq-attrleft{
+    position: absolute;
+    left:0;
+    top:70px;
+}
+.lq-attrright{
+    position: absolute;
+    right:0;
+    top:70px;
+}
+.lq-ul-div{
+    width:135px;
+    height:140px;
+    float: left;
+    margin-left:20px;
+
+}
+.lq-title{
+    font-size:14px;
+    font-weight: 600;
+    letter-spacing:5px;
+}
+.lq-text{
+    font-size:12px;
+}
+.lq-text a{
+    color:#00A0E9;
+}
+
+.lq-dot{
+    width:100px;
+    height:15px;
+    position: absolute;
+    left:125px;
+    top:180px;
+}
+.lq-dot a{
+    display: block;
+    width:10px;
+    height:10px;
+    border:none;
+    border-radius: 5px;
+    float: left;
+    background-color: #9d9d9d;
+    margin-left:10px;
+}
+.lq-current{
+    background-color: red;
+}
+
+
+
+
+
+
+
+

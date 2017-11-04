@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>详细资料</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/personal.css">
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+
+
+    <script src="js/angular.min.js"></script>
+    <script src="js/An-public.js"></script>
+
+
+</head>
+<body ng-app="app">
+<zyheader></zyheader>
+<zynav></zynav>
+
+
+<div class="main" >
+    <div class="main_box" style="background: rgba(255,255,255,0.8);">
+        <div class="main_box_right" >
+            <div class="huodong">
+                个人中心
+            </div>
+            <zyside></zyside>
+
+        </div>
+        <div class="main_box_left">
+            <div class="ac_righttop">
+                当前位置>
+                <a href="index.html">首页></a>
+                <a href="active.html">活动专题></a>
+                线下活动
+            </div>
+            <div class="xxzl_box">
+                <div class="per_gongzuo">
+                    工作学习>>
+                </div>
+                <ul>
+                    <li class="xx_li">
+                        <span>职业职位 : </span>
+                        <input type="text">
+                    </li>
+                    <li class="xx_li">
+                        <span>公司行业 :</span>
+                        <input type="text">
+                    </li>
+                    <li class="xx_li">
+                        <span>毕业院校 :</span>
+                        <input type="text">
+                    </li>
+                    <li class="xx_li">
+                        <span>专业类型 :</span>
+                        <input type="text">
+                    </li>
+                    <li class="xx_li">
+                        <span>月收入 :</span>
+                        <input type="text">
+                    </li>
+                    <li class="xx_li">
+                        <span>购房 :</span>
+                        <input type="text">
+                    </li>
+                    <li class="xx_li">
+                        <span>购车 :</span>
+                        <input type="text">
+                    </li>
+                </ul>
+                <div class="xx_button">
+                    <button id="xx_butt" >保存并继续</button>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!--QQ侧边栏-->
+  <zyqq></zyqq>
+    <!--QQ侧边栏-->
+    <div style="margin-top:80px;">
+       <zynav ></zynav>
+   </div>
+   <zyfooter></zyfooter>
+
+
+</div>
+
+
+</body>
+</html>
